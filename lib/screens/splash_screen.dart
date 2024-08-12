@@ -29,10 +29,11 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
+        height: MediaQuery.of(context).size.height,
         color: Colors.blueGrey,
         width: double.infinity,
-        child: Padding(
-          padding: const EdgeInsets.only(top: 160, bottom: 90),
+        padding: const EdgeInsets.only(top: 160, bottom: 90),
+        child: SingleChildScrollView(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -62,7 +63,7 @@ class _SplashScreenState extends State<SplashScreen> {
                     fontWeight: FontWeight.bold,
                     color: Colors.blueGrey.shade300),
               ),
-              const Spacer(),
+              SizedBox(height: 30.h),
               const CircularProgressIndicator(
                 color: Colors.amber,
               )

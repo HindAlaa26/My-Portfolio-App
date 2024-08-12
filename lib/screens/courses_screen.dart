@@ -54,6 +54,8 @@ class CoursesScreen extends StatelessWidget {
           ),
         ),
         child: ListView.builder(
+          shrinkWrap: true,
+          scrollDirection: Axis.vertical,
           itemCount: courses.length,
           itemBuilder: (context, index) {
             return Card(
