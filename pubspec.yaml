@@ -37,7 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.6
   flutter_screenutil: ^5.9.3
   webview_flutter: ^3.0.0
-
+  device_preview: ^1.2.0
 dev_dependencies:
   flutter_test:
     sdk: flutter

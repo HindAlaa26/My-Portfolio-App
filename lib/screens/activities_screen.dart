@@ -27,6 +27,8 @@ class ActivitiesScreen extends StatelessWidget {
         title: const Text('Activities & Voluntary Work'),
       ),
       body: Container(
+        height: MediaQuery.of(context).size.height,
+        width: MediaQuery.of(context).size.width,
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
@@ -64,14 +66,17 @@ class ActivitiesScreen extends StatelessWidget {
                       ),
                       SizedBox(height: 10.h),
                       Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Icon(Icons.business, color: Colors.blueGrey.shade500),
                           SizedBox(width: 10.w),
-                          Text(
-                            activities[index]['organization']!,
-                            style: TextStyle(
-                              fontSize: 16.sp,
-                              color: Colors.blueGrey.shade700,
+                          Expanded(
+                            child: Text(
+                              activities[index]['organization']!,
+                              style: TextStyle(
+                                fontSize: 16.sp,
+                                color: Colors.blueGrey.shade700,
+                              ),
                             ),
                           ),
                         ],

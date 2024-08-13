@@ -92,7 +92,7 @@ class _ObjectiveScreenState extends State<ObjectiveScreen> {
                 ),
               ),
               AnimatedContainer(
-                height: isExpand ? 200 : 0,
+                height: isExpand ? 210 : 0,
                 duration: const Duration(milliseconds: 400),
                 child: Container(
                   width: double.infinity,

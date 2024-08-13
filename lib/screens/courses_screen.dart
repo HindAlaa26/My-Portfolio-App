@@ -42,6 +42,8 @@ class CoursesScreen extends StatelessWidget {
         title: const Text('Courses'),
       ),
       body: Container(
+        height: MediaQuery.of(context).size.height,
+        width: MediaQuery.of(context).size.width,
         padding: const EdgeInsets.all(16.0),
         decoration: const BoxDecoration(
           gradient: LinearGradient(
