@@ -10,23 +10,23 @@ class EducationScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Education'),
       ),
-      body: SingleChildScrollView(
-        child: Container(
-          height: MediaQuery.of(context).size.height,
-          width: MediaQuery.of(context).size.width,
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                Colors.blueGrey,
-                Colors.grey.shade300,
-                Colors.grey,
-              ],
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-            ),
+      body: Container(
+        height: MediaQuery.of(context).size.height,
+        width: MediaQuery.of(context).size.width,
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: [
+              Colors.blueGrey,
+              Colors.grey.shade300,
+              Colors.grey,
+            ],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
           ),
-          child: Padding(
-            padding: EdgeInsets.symmetric(vertical: 40.h, horizontal: 20.w),
+        ),
+        child: Padding(
+          padding: EdgeInsets.symmetric(vertical: 40.h, horizontal: 20.w),
+          child: SingleChildScrollView(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
