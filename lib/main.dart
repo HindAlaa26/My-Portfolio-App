@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -27,6 +29,7 @@ class MyApp extends StatelessWidget {
             useInheritedMediaQuery: true,
             locale: DevicePreview.locale(context),
             builder: DevicePreview.appBuilder,
+            scrollBehavior: AppScrollBehaviour(),
             theme: ThemeData(
               appBarTheme: AppBarTheme(
                 backgroundColor: Colors.blueGrey.withOpacity(.5),
@@ -38,4 +41,12 @@ class MyApp extends StatelessWidget {
           );
         });
   }
+}
+
+class AppScrollBehaviour extends MaterialScrollBehavior {
+  @override
+  Set<PointerDeviceKind> get dragDevices => {
+        PointerDeviceKind.touch,
+        PointerDeviceKind.mouse,
+      };
 }
