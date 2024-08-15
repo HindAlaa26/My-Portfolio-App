@@ -50,7 +50,7 @@ class ProjectsScreen extends StatelessWidget {
       ),
       body: Container(
         height: ScreenUtil().screenHeight,
-        width: ScreenUtil().screenWidth,
+        width: double.infinity,
         padding: const EdgeInsets.all(16.0),
         decoration: BoxDecoration(
           gradient: LinearGradient(

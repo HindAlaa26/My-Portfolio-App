@@ -36,7 +36,7 @@ class _ObjectiveScreenState extends State<ObjectiveScreen> {
       ),
       body: Container(
         height: ScreenUtil().screenHeight,
-        width: ScreenUtil().screenWidth,
+        width: double.infinity,
         decoration: BoxDecoration(
             gradient: LinearGradient(
           colors: [

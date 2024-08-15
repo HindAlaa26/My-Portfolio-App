@@ -32,7 +32,7 @@ class PortfolioScreen extends StatelessWidget {
         ),
         body: Container(
           height: ScreenUtil().screenHeight,
-          width: ScreenUtil().screenWidth,
+          width: double.infinity,
           decoration: BoxDecoration(
               gradient: LinearGradient(
             colors: [
@@ -43,8 +43,8 @@ class PortfolioScreen extends StatelessWidget {
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
           )),
-          child: SingleChildScrollView(
-            child: Center(
+          child: Center(
+            child: SingleChildScrollView(
               child: Wrap(
                   spacing: 20,
                   runSpacing: 50,

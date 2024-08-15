@@ -43,7 +43,7 @@ class CoursesScreen extends StatelessWidget {
       ),
       body: Container(
         height: ScreenUtil().screenHeight,
-        width: ScreenUtil().screenWidth,
+        width: double.infinity,
         padding: const EdgeInsets.all(16.0),
         decoration: const BoxDecoration(
           gradient: LinearGradient(

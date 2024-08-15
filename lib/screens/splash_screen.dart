@@ -30,7 +30,7 @@ class _SplashScreenState extends State<SplashScreen> {
     return Scaffold(
       body: Container(
         height: ScreenUtil().screenHeight,
-        width: ScreenUtil().screenWidth,
+        width: double.infinity,
         color: Colors.blueGrey,
         padding: const EdgeInsets.only(top: 160, bottom: 90),
         child: SingleChildScrollView(
