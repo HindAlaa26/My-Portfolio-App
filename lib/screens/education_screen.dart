@@ -11,8 +11,8 @@ class EducationScreen extends StatelessWidget {
         title: const Text('Education'),
       ),
       body: Container(
-        height: MediaQuery.of(context).size.height,
-        width: MediaQuery.of(context).size.width,
+        height: ScreenUtil().screenHeight,
+        width: ScreenUtil().screenWidth,
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [

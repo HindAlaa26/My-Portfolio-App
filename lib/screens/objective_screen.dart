@@ -35,8 +35,8 @@ class _ObjectiveScreenState extends State<ObjectiveScreen> {
         backgroundColor: Colors.blueGrey.shade300,
       ),
       body: Container(
-        height: MediaQuery.of(context).size.height,
-        width: double.infinity,
+        height: ScreenUtil().screenHeight,
+        width: ScreenUtil().screenWidth,
         decoration: BoxDecoration(
             gradient: LinearGradient(
           colors: [

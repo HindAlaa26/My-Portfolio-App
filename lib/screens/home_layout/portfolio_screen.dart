@@ -31,8 +31,8 @@ class PortfolioScreen extends StatelessWidget {
           title: const Text('Hind Alaa Fathy - Portfolio'),
         ),
         body: Container(
-          height: MediaQuery.of(context).size.height,
-          width: MediaQuery.of(context).size.width,
+          height: ScreenUtil().screenHeight,
+          width: ScreenUtil().screenWidth,
           decoration: BoxDecoration(
               gradient: LinearGradient(
             colors: [

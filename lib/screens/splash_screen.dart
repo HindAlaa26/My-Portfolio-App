@@ -29,9 +29,9 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        height: MediaQuery.of(context).size.height,
+        height: ScreenUtil().screenHeight,
+        width: ScreenUtil().screenWidth,
         color: Colors.blueGrey,
-        width: double.infinity,
         padding: const EdgeInsets.only(top: 160, bottom: 90),
         child: SingleChildScrollView(
           child: Column(
