@@ -89,7 +89,7 @@ class SkillsScreen extends StatelessWidget {
                           ],
                         ),
                       );
-                    }).toList(),
+                    }),
                   ],
                 ),
               ),
